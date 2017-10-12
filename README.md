@@ -10,4 +10,4 @@
 -`月台`：使用全形文字。ex:１Ａ、２Ｂ、３Ａ<br>
 -`備註`：跑馬燈內容<br>
 
-Taiwan-Railway-Train-Platform-Electronic-Billboards-Generator
+範例：https://iamkyc.github.io/Taiwan-Railway-Train-Platform-Electronic-Billboards-Generator/
