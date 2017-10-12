@@ -1,0 +1,194 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+
+//title
+.title{
+	text-align:center;
+
+}
+
+//board的css  థ౪థ
+
+$board-width:410px;
+$board-height:245px;
+
+$screen-bgc: black;
+$screen-height:45px;
+$sm-screen-height:35px;
+
+$chinese-fontsize:20px;
+$english-fontsize:15px;
+
+$board-row-marginTop:10px;
+$board-row-height:67px;
+$first-row-height:($board-row-height)-(($screen-height)-($sm-screen-height));
+
+
+.board-frame-tw{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:$chinese-fontsize;
+	position:relative;
+	margin:0 auto 0 auto;
+	width:$board-width;
+	height:$board-height;
+	background-color:#0000C6;
+	color:#fff;
+	margin-top:20px;
+
+	.first-row{
+		margin-top:$board-row-marginTop;
+		height:$first-row-height;
+	}
+	
+	.second-row{
+		margin-top:($board-row-marginTop*2 + $first-row-height);
+		height:$board-row-height;
+	}
+
+	.third-row{
+		margin-top:($board-row-marginTop*3 + $board-row-height + $first-row-height + $english-fontsize);
+		height:($board-row-height)-$english-fontsize;
+	}
+
+	.board-row{
+		position:absolute;
+		display:flex;
+		width:$board-width;
+		font-family:"Microsoft JhengHei";
+
+		.board-subtitle{
+			position:relative;
+			width:50px;
+			font-weight:bold;
+
+			span:nth-child(1){
+				position:absolute;
+				top:17%;
+				left:15%;
+			}
+			span:nth-child(2){
+				position:absolute;
+				top:58%;
+				left:43%;
+			}
+		}
+
+		.english-subtitle{
+			font-size:$english-fontsize;
+			text-align:center;
+		}
+
+		.screen{
+			height:$screen-height;
+			background-color: $screen-bgc;
+			color:red;
+			text-align:center;
+			vertical-align:center;
+			font-size:($screen-height);
+			font-weight:900;
+			font-family: 'PMingLiU', serif;
+			text-shadow:0px 0px 25px red;
+			padding-bottom:2px;
+		}
+
+		.sm-screen{
+			height:$sm-screen-height;
+			font-size:($sm-screen-height)-1;
+		}
+
+		#Distination{
+			.distination-screen{			
+				width:100px;
+			}
+		}
+
+		#Via{
+			.via-screen{
+				width:60px;
+			}
+		}
+
+		#TrainType{
+			.traintype-screen{
+				width:100px;
+			}
+		}
+
+		#DepartureTime{
+			padding-left:10px;
+			.departure-screen{
+				width:185px;
+				letter-spacing: -12px;
+				padding-right:15px;
+			}
+		}
+
+		#Platform{
+			.platform-screen{
+				width:75px;
+				letter-spacing: -12px;
+				padding-right:15px;
+			}
+		}
+
+		.row-screen{
+			width:390px;
+			margin:0 auto 0 auto;
+		}
+		
+
+		.r1-unit{
+			padding:33px 5px 0px 5px;
+			font-weight:bold;
+		}
+
+		.r2-unit{
+			padding:29px 10px 0px 10px;
+			font-weight:bold;
+		}
+
+	}
+}
+
+//control的css _(:3 」∠ )_
+.control{
+	width:350px;
+	margin:50px auto 0 auto;
+	font-family:"Microsoft JhengHei";
+	color:#007500;
+
+	fieldset{
+		border:2px solid #007500;
+	}
+
+	form{
+		line-height: 30px;
+		
+	
+		input{
+			width:50px;
+		}
+
+		.full-width-input{
+			width:80px;
+		}
+
+		.memo-input{
+			textarea{
+				width:320px;
+				height:50px;
+				resize: none;
+			}
+		}
+
+		span{
+			font-size:8px;
+			color:gray;
+			vertical-align: bottom;
+			padding-left:3px;
+		}
+
+	}
+}
